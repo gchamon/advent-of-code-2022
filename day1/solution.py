@@ -1,4 +1,4 @@
-with open("day1/first_puzzle_input.txt") as input_fp:
+with open("day1/puzzle_input.txt") as input_fp:
     puzzle_input = input_fp.read()
     elves_raw = puzzle_input.split("\n\n")
     elves_split_str = (elf.split("\n") for elf in elves_raw)
