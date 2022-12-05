@@ -13,10 +13,10 @@ with open("day1/puzzle_input.txt") as input_fp:
 
 def first_puzzle_solution():
     elf_with_most_calories = sorted_elves_calories[0]
-    print(elf_with_most_calories)
+    return elf_with_most_calories
 
 
 def second_puzzle_solution():
     top_three_elves = sorted_elves_calories[:3]
     top_three_elves_calories = list(zip(*top_three_elves))[1]
-    print(sum(top_three_elves_calories))
+    return sum(top_three_elves_calories)

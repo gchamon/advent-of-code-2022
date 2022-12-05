@@ -39,16 +39,16 @@ def _solve_puzzle(input_file, decryption_key):
     rounds_ranked = (_rank_round(cur_round[0], cur_round[1])
                      for cur_round in rounds_decrypted)
     total_score = sum(rounds_ranked)
-    print(total_score)
+    return total_score
 
 
 def solve_example():
-    _solve_puzzle("day2/example.txt", decryption_key_first_puzzle)
+    return _solve_puzzle("day2/example.txt", decryption_key_first_puzzle)
 
 
 def first_puzzle_solution():
-    _solve_puzzle("day2/puzzle_input.txt", decryption_key_first_puzzle)
+    return _solve_puzzle("day2/puzzle_input.txt", decryption_key_first_puzzle)
 
 
 def second_puzzle_solution():
-    _solve_puzzle("day2/puzzle_input.txt", decryption_key_second_puzzle)
+    return _solve_puzzle("day2/puzzle_input.txt", decryption_key_second_puzzle)
