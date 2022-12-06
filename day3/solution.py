@@ -50,12 +50,14 @@ def _get_elves_groups(input_file):
     group_size = 3
     return chunks(rucksacks, group_size)
 
+
 def _intersection(sets_iterator):
     intersection = next(sets_iterator)
     for next_set in sets_iterator:
         intersection = intersection.intersection(next_set)
 
     return list(intersection)
+
 
 def _get_elves_groups_badges_priorities(elves_groups):
     return (letter_priorities[_intersection((set(elf_in_group) for elf_in_group in elves_group))[0]]
